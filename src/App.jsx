@@ -12,6 +12,8 @@ import { db, auth, logout } from "./firebase";
 const COL = "ht-consignation-docs";
 const CLI_COL = "ht-consignation-clients"; // ancien stockage propre à l'app (lu une seule fois pour la migration)
 const SHARED_COL = "contacts-ht-maintenance"; // base contacts commune à toutes les apps HT
+const SETTINGS_REF = () => doc(db, "ht-consignation", "parametres");
+const MAX_BYTES = 1000000; // limite Firestore ≈ 1 Mo par document
 
 /* ---------------- Base contacts partagée (même logique que HT-Devis-Facture) ---------------- */
 
