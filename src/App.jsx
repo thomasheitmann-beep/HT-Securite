@@ -1625,8 +1625,8 @@ export default function App() {
   const enCours = docs.filter((d) => d.type === "AC" && statutOf(d).t === "Consignée");
   return (
     <div className="min-h-screen" style={{ background: C.bg, fontFamily: "Barlow, sans-serif" }}>
-      <TopBar title="Consignations & plans de prévention">
-        <span className="hidden text-sm font-bold sm:inline" style={{ color: C.yellow }}>HT</span>
+      <TopBar title="HT Sécurité">
+        <span className="hidden text-sm font-semibold sm:inline" style={{ color: C.yellow }}>Consignations · Plans de prévention</span>
       </TopBar>
       <main className="mx-auto max-w-4xl space-y-5 px-4 py-5">
         <div className="grid gap-3 sm:grid-cols-2">

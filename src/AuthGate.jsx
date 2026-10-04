@@ -34,8 +34,8 @@ export default function AuthGate({ children }) {
     <div className="flex min-h-screen items-center justify-center p-4" style={{ background: "#17212b", fontFamily: "Barlow, system-ui, sans-serif" }}>
       <form onSubmit={submit} className="w-full max-w-sm rounded-lg bg-white p-6">
         <div className="-mx-6 -mt-6 mb-5 h-2 rounded-t-lg" style={{ background: "repeating-linear-gradient(-45deg,#f5c400 0 12px,#17212b 12px 24px)" }} />
-        <h1 className="text-2xl font-bold text-slate-900">HT-Maintenance</h1>
-        <p className="mb-5 text-sm text-slate-600">Consignations et plans de prévention</p>
+        <h1 className="text-2xl font-bold text-slate-900">HT Sécurité</h1>
+        <p className="mb-5 text-sm text-slate-600">HT-Maintenance — consignations et plans de prévention</p>
         <label className="mb-3 block">
           <span className="mb-1 block text-sm font-medium text-slate-600">E-mail</span>
           <input type="email" autoComplete="username" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full rounded-md border border-slate-300 px-3 py-2" />
